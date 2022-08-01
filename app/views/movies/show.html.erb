@@ -1,0 +1,19 @@
+<div class="container">
+  <section class="movie">
+    <div class="summary">
+      <h2>
+        <%= @movie.title %>
+      </h2>
+      <h3>
+        <%=total_gross(@movie)%>
+      </h3>
+      <p>
+        <%=@movie.description%> <strong>(<%=year_of(@movie) %>)</strong>
+      </p>
+    </div>
+  </section>
+  <section class="admin">
+      <%= link_to 'Edit', edit_movie_path(@movie), class: "button" %>
+    <%= link_to 'Delete', movie_path(@movie), class: 'button', data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } %>
+  </section>
+</div>
