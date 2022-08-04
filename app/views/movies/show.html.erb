@@ -1,9 +1,18 @@
 <div class="container">
   <section class="movie">
+    <div class="image">
+      <%= image_tag @movie.image_file_name %>
+    </div>
     <div class="summary">
       <h2>
         <%= @movie.title %>
       </h2>
+      <h3>
+        Directed By: <%= @movie.director %>
+      </h3>
+      <h3>
+        <%=@movie.duration %>
+      </h3>
       <h3>
         <%=total_gross(@movie)%>
       </h3>
@@ -14,6 +23,6 @@
   </section>
   <section class="admin">
       <%= link_to 'Edit', edit_movie_path(@movie), class: "button" %>
-    <%= link_to 'Delete', movie_path(@movie), class: 'button', data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } %>
+    <%= link_to 'Delete', movie_path(@movie), class: 'button', data: { confirm: 'Are you sure?', method: :delete } %>
   </section>
 </div>
