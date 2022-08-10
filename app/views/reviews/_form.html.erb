@@ -8,7 +8,12 @@
   <%=f.text_area :comment, rows: 7 %>
 
   <%=f.label :stars %>
-  <%=f.select :stars, Review::STARS, prompt: "Pick one" %>
+  <% Review::STARS.each do |star| %>
+    <span class="star">
+      <%= f.radio_button :stars, star %>
+        <%= label_tag star %>
+    </span>
+  <% end %>
 
   <%=f.submit %>
 <% end %>
