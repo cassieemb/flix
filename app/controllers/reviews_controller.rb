@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
   def create
     @review = @movie.reviews.new(review_params)
 
-    if @review.save!
+    if @review.save
       redirect_to movie_reviews_path(@movie), notice: "Thanks for your review!"
     else
       render :new, status: 422
