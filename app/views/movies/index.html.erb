@@ -8,6 +8,9 @@
         <h2>
           <%= link_to movie.title, movie %>
         </h2>
+        <span>
+          <%= render "shared/stars", percent: movie.average_stars_as_percent %>
+        </span>
         <h3>
           <%=total_gross(movie)%>
         </h3>
