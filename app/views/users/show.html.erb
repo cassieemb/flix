@@ -1,7 +1,13 @@
 <div class="container">
   <section class="user">
     <h1><%=@user.name %></h1>
+    <h1><%=@user.username %></h1>
     <h2><%=mail_to(@user.email) %></h2>
     <h2>Member since: <%=@user.created_at.strftime("%B %Y")%></h2>
+  </section>
+
+  <section class="actions">
+    <%=link_to('Edit User', edit_user_path(@user), class: "button edit") %>
+    <%=link_to('Delete User', user_path(@user), class: 'button delete', data: { confirm: 'Are you sure?', method: :delete }) %>
   </section>
 </div>
