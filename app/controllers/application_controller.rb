@@ -31,4 +31,11 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user_admin?
+
+  def profile_image(user, size=80)
+    url = "https://secure.gravatar.com/avatar/#{user.gravatar_id}?s=#{size}"
+    image_tag(url, alt: user.name)
+  end
+
+  helper_method :profile_image
 end

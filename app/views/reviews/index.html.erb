@@ -3,7 +3,10 @@
   <ul class="reviews">
     <% @reviews.each do |review| %>
       <li>
-        <%= render "shared/stars", percent: review.stars_as_percent %>  <%= review.name %>  <span class="date">
+        <%= render "shared/stars", percent: review.stars_as_percent %>
+        <%= link_to review.user.name, review.user %>
+        <%#= profile_image(review.user, 35) %>
+        <span class="date">
           <%= time_ago_in_words(review.created_at) %> ago
         </span>
         <p>
