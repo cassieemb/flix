@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by(id: params[:id])
     @reviews = @user.reviews
+    @favorite_movies = @user.favorite_movies
   end
 
   def new
@@ -54,7 +55,7 @@ class UsersController < ApplicationController
   end
 
   def require_correct_user
-    @user = User.find_by(params[:id])
+    @user = User.find(params[:id])
     redirect_to root_url unless current_user?(@user)
   end
 end
