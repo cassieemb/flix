@@ -2,9 +2,10 @@
   <nav>
       <%= image_tag("logo") %>
       <ul class = "left">
-        <li>
-          <%= link_to("All Movies", root_path) %>
-        </li>
+        <li><%= nav_link_to "All Movies", root_path %></li>
+        <li><%= nav_link_to "Released", filtered_movies_path(:released) %></li>
+        <li><%= nav_link_to "Upcoming", filtered_movies_path(:upcoming) %></li>
+        <li><%= nav_link_to "Recent", filtered_movies_path(:recent) %></li>
       </ul>
       <ul class = "right">
         <%if current_user %>

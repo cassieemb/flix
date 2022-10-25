@@ -145,7 +145,7 @@ Movie.create!([
                     %{
       Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability she has a more than respectable career as a graphic designer.
     }.squish,
-                  released_on: "2004-07-23",
+                  released_on: "2022-12-25",
                   rating: "PG-13",
                   total_gross: 82_102_379,
                   director: "Jean-Christophe 'Pitof' Comar",
@@ -158,7 +158,7 @@ Movie.create!([
                     %{
       When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.
     }.squish,
-                  released_on: "2017-06-02",
+                  released_on: "2022-12-02",
                   rating: "PG-13",
                   total_gross: 821_847_012,
                   director: "Patty Jenkins",
