@@ -1,3 +1,4 @@
+Movie.destroy_all
 Movie.create!([
                 {
                   title: 'Avengers: Endgame',
@@ -11,8 +12,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 1_223_641_414,
                   director: 'Anthony Russo',
-                  duration: '181 min',
-                  main_image: 'avengers-end-game.png'
+                  duration: '181 min'
                 },
                 {
                   title: 'Captain Marvel',
@@ -24,8 +24,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 1_110_662_849,
                   director: 'Anna Boden',
-                  duration: '124 min',
-                  main_image: 'captain-marvel.png'
+                  duration: '124 min'
                 },
                 {
                   title: 'Black Panther',
@@ -37,8 +36,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 1_346_913_161,
                   director: 'Ryan Coogler',
-                  duration: '134 min',
-                  main_image: 'black-panther.png'
+                  duration: '134 min'
                 },
                 {
                   title: 'Avengers: Infinity War',
@@ -50,8 +48,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 2_048_359_754,
                   director: 'Anthony Russo',
-                  duration: '149 min',
-                  main_image: 'avengers-infinity-war.png'
+                  duration: '149 min'
                 },
                 {
                   title: 'Green Lantern',
@@ -63,8 +60,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 219_851_172,
                   director: 'Martin Campbell',
-                  duration: '114 min',
-                  main_image: 'green-lantern.png'
+                  duration: '114 min'
                 },
                 {
                   title: 'Fantastic Four',
@@ -76,8 +72,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 168_257_860,
                   director: 'Josh Trank',
-                  duration: '100 min',
-                  main_image: 'fantastic-four.png'
+                  duration: '100 min'
                 },
                 {
                   title: 'Iron Man',
@@ -91,8 +86,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 585_366_247,
                   director: 'Jon Favreau',
-                  duration: '126 min',
-                  main_image: 'ironman.png'
+                  duration: '126 min'
                 },
                 {
                   title: 'Superman',
@@ -106,8 +100,7 @@ Movie.create!([
                   rating: 'PG',
                   total_gross: 300_451_603,
                   director: 'Richard Donner',
-                  duration: '143 min',
-                  main_image: 'superman.png'
+                  duration: '143 min'
                 },
                 {
                   title: 'Spider-Man',
@@ -122,8 +115,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 825_025_036,
                   director: 'Sam Raimi',
-                  duration: '121 min',
-                  main_image: 'spiderman.png'
+                  duration: '121 min'
                 },
                 {
                   title: 'Batman',
@@ -136,8 +128,7 @@ Movie.create!([
                   rating: 'PG-13',
                   total_gross: 411_348_924,
                   director: 'Tim Burton',
-                  duration: '126 min',
-                  main_image: 'batman.png'
+                  duration: '126 min'
                 },
                 {
                   title: "Catwoman",
@@ -145,12 +136,11 @@ Movie.create!([
                     %{
       Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability she has a more than respectable career as a graphic designer.
     }.squish,
-                  released_on: "2022-12-25",
+                  released_on: "2004-07-23",
                   rating: "PG-13",
                   total_gross: 82_102_379,
                   director: "Jean-Christophe 'Pitof' Comar",
-                  duration: "101 min",
-                  main_image: "catwoman.png"
+                  duration: "101 min"
                 },
                 {
                   title: "Wonder Woman",
@@ -158,12 +148,11 @@ Movie.create!([
                     %{
       When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.
     }.squish,
-                  released_on: "2022-12-02",
+                  released_on: "2017-06-02",
                   rating: "PG-13",
                   total_gross: 821_847_012,
                   director: "Patty Jenkins",
-                  duration: "141 min",
-                  main_image: "wonder-woman.png"
+                  duration: "141 min"
                 }
               ])
 
